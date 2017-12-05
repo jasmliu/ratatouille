@@ -1,0 +1,28 @@
+
+
+
+#map{
+	width:1200px;
+	height:700px;
+}
+
+#chart{
+	width:1200px;
+	height:700px;
+}
+
+#table{
+	width:1200px;
+}
+
+#submitTable{
+	width:500px;
+}
+
+table{
+	margin:0px auto;
+}
+
+.table-hover tbody tr:hover > td{
+	cursor: pointer;
+}

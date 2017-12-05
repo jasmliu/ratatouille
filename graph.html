@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>ratatouille graph view</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src = "js/graph.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-append.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ratatouille</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">map</a></li>
+      <li class="active"><a href="graph.html">graph</a></li>
+      <li><a href="list.html">list</a></li>
+      <li><a href="submit.html">submit a report</a></li><br>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> register</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> login</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3 text-center">
+        <h1>graph</h1><br>
+        <p>start date : <input type="text" id="date_start" placeholder="YYYY-MM-DD">
+        end date : <input type="text" id="date_end" placeholder="YYYY-MM-DD">
+        <button type="button" onClick="query()">update graph</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="chart" class="center-block"><canvas id="myChart"></canvas></div>
+
+
+</body>
+</html>

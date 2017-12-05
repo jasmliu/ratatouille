@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>ratatouille registration</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src = "js/register.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-append.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ratatouille</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">map</a></li>
+      <li><a href="graph.html">graph</a></li>
+      <li><a href="list.html">list</a></li>
+      <li><a href="submit.html">submit a report</a></li><br>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="register.html"><span class="glyphicon glyphicon-user"></span> register</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> login</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3 text-center">
+      <form class="form" method="post" action="#">
+        <h1>register</h1>
+        <input type="text" id="username" placeholder="username"><br>
+        <input type="password" id="password" placeholder="password"><br>
+        <input type="password" id="confirm" placeholder="confirm password"><br>
+        account type : 
+        <input type="radio" name="account_type" id="account_type" value="user" checked> user
+        <input type="radio" name="account_type" id="account_type" value="admin"> admin<br>
+        <input type="button" id="register" value="submit">
+      </form>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>

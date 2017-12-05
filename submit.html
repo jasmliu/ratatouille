@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>ratatouille submit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src = "js/submit.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-append.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ratatouille</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">map</a></li>
+      <li><a href="graph.html">graph</a></li>
+      <li><a href="list.html">list</a></li>
+      <li class="active"><a href="submit.html">submit a report</a></li><br>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> register</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> login</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3 text-center">
+        <form class="form-inline" method="post" action="#">
+        <h1>submit a report</h1>
+          <input type="text" id="date" placeholder="date"><br>
+          <input type="text" id="loc_type" placeholder="location type"><br>
+          <input type="text" id="zip" placeholder="zip code"><br>
+          <input type="text" id="address" placeholder="address"><br>
+          <input type="text" id="borough" placeholder="borough"><br>
+          <input type="text" id="city" placeholder="city"><br>
+          <input type="text" id="lat" placeholder="latitude"><br>
+          <input type="text" id="lng" placeholder="longitude"><br>
+          <input type="button" id="submit" value="submit"><br>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3 text-center">
+        <form class="form-inline" method="post" action="#">
+        <h1>submit a report</h1>
+          date : <input type="text" id="date" placeholder="YYYY-MM-DD"><br>
+          location type : <input type="text" id="loc_type" placeholder=""><br>
+          zip code : <input type="text" id="zip" placeholder=""><br>
+          address : <input type="text" id="address" placeholder=""><br>
+          borough : <input type="text" id="borough" placeholder=""><br>
+          city : <input type="text" id="city" placeholder=""><br>
+          latitude : <input type="text" id="lat" placeholder=""><br>
+          longitude : <input type="text" id="lng" placeholder=""><br>
+          <input type="button" id="submit" value="submit"><br>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div id="submitTable" class="center-block">            
+  <table id="rats" class="table">
+    <thead>
+    </thead>
+    <tbody> 
+      <tr><td>date : </td><td><input type="text" id="date" placeholder="YYYY-MM-DD"></td></tr>
+      <tr><td>location type : </td><td><input type="text" id="loc_type" placeholder=""></td></tr>
+      <tr><td>date : </td><td><input type="text" id="date" placeholder=""></td></tr>
+      <tr><td>zip code : </td><td><input type="text" id="zip" placeholder=""><br></td></tr>
+      <tr><td>address : </td><td><input type="text" id="address" placeholder=""></td></tr>
+      <tr><td>borough : </td><td><input type="text" id="borough" placeholder=""></td></tr>
+      <tr><td>city : </td><td><input type="text" id="city" placeholder=""></tr>
+      <tr><td>latitude : </td><td><input type="text" id="lat" placeholder=""></td></tr>
+      <tr><td>longitutde : </td><td><input type="text" id="lng" placeholder=""></td></tr>
+    </tbody>
+  </table>
+  </div> -->
+
+</body>
+
+</html>

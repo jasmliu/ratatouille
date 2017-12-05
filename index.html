@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>ratatouille map view</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src = "js/index.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-append.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ratatouille</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">map</a></li>
+      <li><a href="graph.html">graph</a></li>
+      <li><a href="list.html">list</a></li>
+      <li><a href="submit.html">submit a report</a></li><br>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> register</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> login</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3 text-center">
+        <h1>map</h1><br>
+        <p>start date : <input type="text" id="date_start" placeholder="YYYY-MM-DD">
+        end date : <input type="text" id="date_end" placeholder="YYYY-MM-DD">
+        <button type="button" onClick="query()">update map</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="map" class="center-block"></div>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWy6pdKepoYoNf-6f9LWdpmemDHoOaX3I&callback=initMap"></script>
+
+</body>
+
+</html>
