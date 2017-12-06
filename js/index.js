@@ -1,6 +1,4 @@
-function query() {
-	var date_start = $("#date_start").val();
-  	var date_end = $("#date_end").val();
+function query(date_start, date_end) {
 	$.post(
 		"php/jsonfeed.php",
 		{date_start: date_start, date_end: date_end},
@@ -29,6 +27,12 @@ function query() {
 	});
 }
 
+function assignDates() {
+	var date_start = $("#date_start").val();
+  	var date_end = $("#date_end").val();
+  	query(date_start, date_end);
+}
+
 function bindInfoWindow(marker, map, infowindow, html, id) {
 	marker.addListener('mouseover', function() {
         infowindow.setContent(html);
@@ -53,6 +57,11 @@ function initMap() {
 		scrollwheel: false,
 	}
 	var map = new google.maps.Map(canvas, options);
+}
+
+window.onload = function() {
+	var date_start = '2017-08-22';
+  	var date_end = '2017-08-22';
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
