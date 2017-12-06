@@ -57,6 +57,7 @@ function initMap() {
 		scrollwheel: false,
 	}
 	var map = new google.maps.Map(canvas, options);
+	console.log('help');
 	var date_start = '2017-08-22';
   	var date_end = '2017-08-22';
   	query(date_start, date_end);
