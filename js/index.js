@@ -1,9 +1,3 @@
-// window.onload = function() {
-//   var date_start = '2017-07-22';
-//   var date_end = '2017-08-22';
-//   query(date_start, date_end);
-// }
-
 function query(date_start, date_end) {
 	console.log("query request");
   	console.log("start date: " + date_start);
@@ -63,6 +57,8 @@ function initMap() {
 		scrollwheel: false,
 	}
 	var map = new google.maps.Map(canvas, options);
+  	$('#date_start').val('2017-08-22');
+  	$('#date_end').val('2017-08-22');
 	$.post(
 		"php/jsonfeed.php",
 		{date_start: '2017-08-22', date_end: '2017-08-22'},
@@ -89,11 +85,3 @@ function initMap() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
-
-// google.maps.event.addListenerOnce(map, 'tilesloaded', fixMyPageOnce);
-
-// function fixMyPageOnce() {
-// 	var date_start = '2017-08-22';
-//   	var date_end = '2017-08-22';
-//   	query(date_start, date_end);
-// }
