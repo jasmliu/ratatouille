@@ -1,8 +1,8 @@
-window.onload = function() {
-  var date_start = '2017-07-22';
-  var date_end = '2017-08-22';
-  query(date_start, date_end);
-}
+// window.onload = function() {
+//   var date_start = '2017-07-22';
+//   var date_end = '2017-08-22';
+//   query(date_start, date_end);
+// }
 
 function query(date_start, date_end) {
 	console.log("query request");
@@ -63,9 +63,33 @@ function initMap() {
 		scrollwheel: false,
 	}
 	var map = new google.maps.Map(canvas, options);
+	$.post(
+		"php/jsonfeed.php",
+		{date_start: '2017-08-22', date_end: '2017-08-22'},
+		function(data) {
+		console.log("Query completed!");
+		data = jQuery.parseJSON(data);
+		var ny= {lat: 40.7128, lng: -74.0060};
+		var map = new google.maps.Map(document.getElementById('map'), {
+		  zoom: 10,
+		  center: ny
+		});
+		for (var i = 0; i < data.length; i++) {
+			var pos = new google.maps.LatLng(data[i].lat, data[i].lng);
+			var marker = new google.maps.Marker({
+			  position: pos,
+			  map: map
+			});
+			var html = data[i].date + "<br>" + data[i].address + "<br>" + data[i].city;
+			console.log(html);
+			var infowindow = new google.maps.InfoWindow();
+			bindInfoWindow(marker, map, infowindow, html, data[i].id);
+		}
+	});
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
+
 // google.maps.event.addListenerOnce(map, 'tilesloaded', fixMyPageOnce);
 
 // function fixMyPageOnce() {
