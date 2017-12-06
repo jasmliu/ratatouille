@@ -1,3 +1,9 @@
+window.onload = function() {
+  var date_start = '2017-07-22';
+  var date_end = '2017-08-22';
+  query(date_start, date_end);
+}
+
 function query(date_start, date_end) {
 	console.log("query request");
   	console.log("start date: " + date_start);
@@ -19,12 +25,9 @@ function query(date_start, date_end) {
 			  position: pos,
 			  map: map
 			});
-
 			var html = data[i].date + "<br>" + data[i].address + "<br>" + data[i].city;
 			console.log(html);
-
 			var infowindow = new google.maps.InfoWindow();
-
 			bindInfoWindow(marker, map, infowindow, html, data[i].id);
 		}
 	});
@@ -63,10 +66,10 @@ function initMap() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
-google.maps.event.addListenerOnce(map, 'tilesloaded', fixMyPageOnce);
+// google.maps.event.addListenerOnce(map, 'tilesloaded', fixMyPageOnce);
 
-function fixMyPageOnce() {
-	var date_start = '2017-08-22';
-  	var date_end = '2017-08-22';
-  	query(date_start, date_end);
-}
+// function fixMyPageOnce() {
+// 	var date_start = '2017-08-22';
+//   	var date_end = '2017-08-22';
+//   	query(date_start, date_end);
+// }

@@ -60,5 +60,7 @@ function query(date_start, date_end) {
 window.onload = function() {
   var date_start = '2017-07-22';
   var date_end = '2017-08-22';
+  $('#date_start').val(date_start);
+  $('#date_end').val(date_end);
   query(date_start, date_end);
 }
