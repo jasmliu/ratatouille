@@ -1,9 +1,12 @@
+function setDates() {
+  date_start = $("#date_start").val();
+  date_end = $("#date_end").val();
+}
+
 function query() {
   console.log("query request");
   console.log("start date: " + date_start);
   console.log("end date: " + date_end);
-  date_start = $("#date_start").val();
-  date_end = $("#date_end").val();
   $.post(
     "php/jsonfeed.php",
     {date_start: date_start, date_end: date_end},
@@ -52,8 +55,6 @@ function query() {
       });
   });
 }
-
-console.log("what");
 
 window.onload = function() {
   var date_start = '2017-08-22';
