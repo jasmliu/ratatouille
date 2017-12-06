@@ -1,7 +1,9 @@
 function query() {
   console.log("query request");
-  var date_start = $("#date_start").val();
-  var date_end = $("#date_end").val();
+  console.log("start date: " + date_start);
+  console.log("end date: " + date_end);
+  date_start = $("#date_start").val();
+  date_end = $("#date_end").val();
   $.post(
     "php/jsonfeed.php",
     {date_start: date_start, date_end: date_end},
