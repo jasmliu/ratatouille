@@ -1,9 +1,10 @@
 function setDates() {
   date_start = $("#date_start").val();
   date_end = $("#date_end").val();
+  query(date_start, date_end);
 }
 
-function query() {
+function query(date_start, date_end) {
   console.log("query request");
   console.log("start date: " + date_start);
   console.log("end date: " + date_end);
@@ -59,5 +60,5 @@ function query() {
 window.onload = function() {
   var date_start = '2017-08-22';
   var date_end = '2017-08-22';
-  query();
+  query(date_start, date_end);
 }
