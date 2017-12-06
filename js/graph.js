@@ -54,5 +54,7 @@ function query() {
 console.log("what");
 
 window.onload = function() {
+  var date_start = '2017-08-22';
+  var date_end = '2017-08-22';
   query();
 }
