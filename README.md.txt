@@ -1,3 +1,3 @@
-#ratatouille
-website for ratatouille android app
+#nyc rat tracker
+
 192.241.145.60/ratatouille
