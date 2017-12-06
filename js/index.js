@@ -62,6 +62,7 @@ function initMap() {
 window.onload = function() {
 	var date_start = '2017-08-22';
   	var date_end = '2017-08-22';
+  	query(date_start, date_end);
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
