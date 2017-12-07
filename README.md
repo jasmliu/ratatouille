@@ -4,4 +4,4 @@ http://192.241.145.60/ratatouille
 
 Ratatouille is a rat-tracking service that allows you to submit and view rat sightings. Included in the database are official NYC reports from 2010 - present. Seen a rat? Submit a sighting today!
 
-Mobile app (Android) version: https://github.com/Jason27chan/Ratatouille
+Mobile (Android) version: https://github.com/Jason27chan/Ratatouille
