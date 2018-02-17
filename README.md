@@ -2,7 +2,7 @@
 
 http://ratatouille.jasmineliu.me
 
-Ratatouille is a rat-tracking service that allows you to submit and view rat sighting info and trends. Included in the database are official NYC reports from 2010 - present.
+Ratatouille is a rat-tracking service that allows you to submit and view rat sightings.
 
 Team: Jasmine Liu, Jason Chan, Emily Chang
 
